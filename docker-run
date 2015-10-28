@@ -7,7 +7,7 @@ library(httr)
 # Get passed environment variables.
 env_var_names <- list("ACHILLES_SITE", "ACHILLES_DB_URI",
                       "ACHILLES_CDM_SCHEMA", "ACHILLES_RES_SCHEMA",
-                      "ACHILLES_OUTPUT_BASE")
+                      "ACHILLES_CDM_VERSION","ACHILLES_OUTPUT_BASE")
 env_vars <- Sys.getenv(env_var_names, unset=NA)
 
 # Replace unset environement variables with defaults.
