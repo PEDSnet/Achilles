@@ -1,0 +1,56 @@
+achilleschop:
+    build: .
+    env_file:
+        - env_vars_chop
+    external_links:
+        - pedsnetdb_postgres_1:db
+    volumes:
+        - /export/achilles_data/test:/opt/app/output
+achillesnationwide:
+    build: .
+    env_file:
+        - env_vars_nationwide
+    external_links:
+        - pedsnetdb_postgres_1:db
+    volumes:
+        - /export/achilles_data/test:/opt/app/output
+achillescolorado:
+    build: .
+    env_file:
+        - env_vars_colorado
+    external_links:
+        - pedsnetdb_postgres_1:db
+    volumes:
+        - /export/achilles_data/test:/opt/app/output
+achillesstlouis:
+    build: .
+    env_file:
+        - env_vars_stlouis
+    external_links:
+        - pedsnetdb_postgres_1:db
+    volumes:
+        - /export/achilles_data/test:/opt/app/output
+achillesnemours:
+    build: .
+    env_file:
+        - env_vars_nemours
+    external_links:
+        - pedsnetdb_postgres_1:db
+    volumes:
+        - /export/achilles_data/test:/opt/app/output
+achillesseattle:
+    build: .
+    env_file:
+        - env_vars_seattle
+    external_links:
+        - pedsnetdb_postgres_1:db
+    volumes:
+        - /export/achilles_data/test:/opt/app/output
+achillesdcc:
+    build: .
+    env_file:
+        - env_vars_dcc
+    external_links:
+        - pedsnetdb_postgres_1:db
+    volumes:
+        - /export/achilles_data/test:/opt/app/output
